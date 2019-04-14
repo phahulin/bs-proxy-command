@@ -12,7 +12,7 @@ const hostname = process.argv[5];
 //console.error('hostname = ' + hostname);
 
 if (!aws_profile || !prefix || !hostname || !region) {
-	console.error('Usage: node <aws_profile from ~/.aws> <rpefix> <ssh hostname> <region>');
+	console.error('Usage: node <aws_profile from ~/.aws> <region> <pefix> <ssh hostname>');
 	process.exitCode = 3;
 	return;
 }
